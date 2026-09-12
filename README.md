@@ -12,7 +12,7 @@
     </div>
     
     <p style="color: #E2E8F0; margin: 15px 0 0 0; font-family: system-ui, sans-serif; font-size: 14px; line-height: 1.6;">
-      दैनिक टूल्स, वैज्ञानिक मैट्रिक्स गणना (NumPy) और पूर्ण बुकस्टोर इन्वेंट्री-कम-एनालिटिक्स सिस्टम को संभालने के लिए बनाया गया एक शक्तिशाली, इंटरैक्टिव और कमांड-लाइन आधारित कंसोल पावरहाउस।
+      A powerful, interactive command-line console powerhouse designed to handle daily system tools, scientific matrix calculations (NumPy), and a complete bookstore inventory-cum-analytics management ecosystem.
     </p>
   </div>
 </div>
@@ -27,9 +27,9 @@
 
 ---
 
-## 🗺️ संपूर्ण सिस्टम आर्किटेक्चर (Workflow Flowchart)
+## 🗺️ System Architecture (Workflow Flowchart)
 
-यह सुइट 3 अलग-अलग मोड्युलरी पैकेजों में बंटा हुआ है जो आपके टर्मिनल को एक सुपर-ऐप में बदल देते हैं:
+The suite is cleanly engineered into 3 modular terminal frameworks, transforming your standard shell interface into a multi-purpose application hub:
 
 ```mermaid
 graph TD
@@ -57,60 +57,61 @@ graph TD
 
 ---
 
-## ⚡ मुख्य मॉड्यूल और उनके फीचर्स (Module Overview)
+## ⚡ Core Modules & Features
 
-नीचे दिए गए किसी भी पैकेज को एक्सपैंड (खोलकर) करके उसके अंदर की सभी क्षमताएं देखें:
+Click on any package category below to look closer into its specific technical features:
 
 <details open>
-<summary>📦 मॉड्यूल 1: सामान्य उपयोगिताएँ (General Utilities)</summary>
+<summary>📦 Package 1: General Utilities</summary>
 <br>
 
-* 📅 **समय और दिनांक:** रीयल-टाइम क्लॉक स्टैम्प देखना और दो तारीखों के बीच का अंतर निकालना।
-* ⏱️ **स्टॉपवॉच और टाइमर:** टर्मिनल के अंदर लाइव पॉज़िंग के साथ सटीक काउंटडाउन और स्टॉपवॉच।
-* 🔐 **सिक्योरिटी टोकन्स:** रैंडम अल्फ़ान्यूमेरिक पासवर्ड जनरेटर और वन-टाइम पासकोड (OTP) जनरेटर।
-* 📂 **फ़ाईल सिस्टम और रिफ्लेक्शन:** फ़ाइलों को सुरक्षित तरीके से पढ़ना/लिखना और `dir()` का उपयोग करके लाइब्रेरी एट्रिब्यूट्स की जांच करना।
+* 📅 **Time & Calendar:** Display live system clock timestamps and calculate exact date deltas (day differences) between custom dates.
+* ⏱️ **Stopwatch & Timers:** Low-level monotonic system interval stopwatch and live-pausing console step-down countdowns.
+* 🔐 **Security Tokens:** Dynamically generate cryptographically safe alphanumeric passwords and 4-to-6 digit numeric One-Time Passwords (OTPs).
+* 📂 **File Stream I/O & Reflection:** Secure, context-managed file reader/writer operations alongside a python runtime namespace `dir()` inspector.
 </details>
 
 <details>
-<summary>🧮 मॉड्यूल 2: न्यूमपाय मैट्रिक्स विश्लेषक (NumPy Analyzer)</summary>
+<summary>🧮 Package 2: NumPy Matrix Analyzer</summary>
 <br>
 
-* 🧊 **N-Dimensional Array Factory:** आसानी से 1D वेक्टर्स, 2D मेट्रिसेस या जटिल 3D एरेज़ का निर्माण।
-* 🔪 **डायनामिक स्लाइसिंग:** इनपुट स्ट्रिंग्स (जैसे `0:2, 1:3`) के ज़रिए मैट्रिक्स के किसी भी हिस्से को काटना।
-* 📈 **एडवांस्ड स्टैटिस्टिक्स:** कुल योग (Sum), माध्य (Mean), मानक विचलन (Standard Deviation/σ) और कोरिलेशन कोएफिशिएंट निकालना।
+* 🧊 **N-Dimensional Array Factory:** Instantly configure multi-dimensional 1D vectors, 2D surfaces, or layered 3D matrices.
+* 🔪 **Dynamic Slicing Logic:** Extract matrix views using clean, custom string coordinate array indexing tokens (e.g., `0:2, 1:3`).
+* 📈 **Advanced Distributions:** Seamlessly compute element-wise math alongside high-level statistics like Mean, Median, Standard Deviation (σ), and multi-variable correlation coefficients.
 </details>
 
 <details>
-<summary>📊 मॉड्यूल 3: बुकस्टोर इन्वेंट्री और एनालिटिक्स (Bookstore CRM)</summary>
+<summary>📊 Package 3: Bookstore CRM Engine</summary>
 <br>
 
-* 📥 **स्मार्ट कैटलॉग:** किताबें जोड़ें। यदि किताब पहले से मौजूद है, तो यह डुप्लिकेट बनाने के बजाय सीधे मात्रा बढ़ा देता है।
-* 💰 **बिक्री खाता (Sales Ledger):** लाइव सेल्स को रिकॉर्ड करना, स्टॉक से किताबें घटाना और कुल रेवेन्यू का ऑडिट करना।
-* 🎨 **ऑटो-ग्राफ जनरेटर (Matplotlib):** एक सिंगल क्लिक में निम्नलिखित व्यावसायिक विज़ुअलाइज़ेशन चार्ट्स को `.png` इमेज के रूप में सेव करना:
-  - `chart_sales_by_genre.png` (शैली आधारित बिक्री बार चार्ट)
-  - `chart_monthly_trend.png` (मासिक बिक्री का उतार-चढ़ाव)
-  - `chart_revenue_pie.png` (कमाई का प्रतिशत पाई चार्ट)
-  - `chart_price_sales_heatmap.png` (कीमत और मांग का हीटमैप)
+* 📥 **Upsert Catalog Handling:** Add inventory entries safely. Automatically checks for duplicates and cascades matching tokens into bulk volume top-ups rather than cloning records.
+* 💰 **Sales Registry Ledger:** Stream customer transaction quantities, subtract units from available warehouse stock, and tally cumulative revenues.
+* 🎨 **Matplotlib Graph Generator:** Automatically renders and exports full-color analytical business insight metrics straight into the workspace as local `.png` files:
+  - `chart_sales_by_genre.png` (Genre distribution bar graphics)
+  - `chart_monthly_trend.png` (Chronological customer volume line trend)
+  - `chart_revenue_pie.png` (Financial breakdown profit contribution share split)
+  - `chart_price_sales_heatmap.png` (Price elasticity / sales volume clustering matrix)
 </details>
 
 ---
 
-## 🚀 इंस्टॉलेशन और रन करने की प्रक्रिया
+## 🚀 Installation & Deployment
 
-### 1. सिस्टम आवश्यकताएँ (Dependencies)
-इस सुइट के सामान्य यूटिलिटी टूल्स बिना किसी बाहरी लाइब्रेरी के चलते हैं, लेकिन **NumPy** और **Bookstore Charts** के लिए नीचे दिए गए पैकेजों को इंस्टॉल करना ज़रूरी है:
+### 1. Prerequisites (Dependencies)
+While the core utilities run strictly on Python's built-in standard library, the advanced **NumPy** and **Bookstore CRM charts** require data-science computation packages. Install them using your preferred terminal terminal:
 ```bash
 pip install numpy pandas matplotlib seaborn
 ```
 
-### 2. सुइट को टर्मिनल में चलाएं
+### 2. Launch the Application Suite
+Ensure you are in the application root directory and type:
 ```bash
 python main_toolkit.py
 ```
 
 ---
 
-## 💻 सैंपल रन लॉग्स (System Logs Breakdown)
+## 💻 Sample Console Execution Logs
 
 ```text
 ==========================================
