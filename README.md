@@ -1,32 +1,6 @@
 # Bookstore-Inventory-
 # 📚 Bookstore Inventory & Analytics System
 
-<div align="center">
-  <!-- Premium Native CSS Animated Header Card -->
-  <div style="background: linear-gradient(135deg, #1A1B2F 0%, #162A45 100%); padding: 35px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.4); border: 2px solid #FF6B6B; max-width: 650px; margin: 20px auto; overflow: hidden;">
-    <h1 style="color: #FFD166; margin: 0 0 10px 0; font-family: 'Fira Code', monospace; font-size: 26px; text-shadow: 0 0 12px rgba(255,209,102,0.4);">📖 Bookstore CRM & Analytics Engine</h1>
-    
-    <!-- CSS Typing Animation -->
-    <div style="display: inline-block; font-family: 'Fira Code', monospace; font-weight: 600; font-size: 16px; color: #45C4B0; border-right: 2px solid #45C4B0; white-space: nowrap; overflow: hidden; width: 0; animation: typing 4s steps(45, end) infinite alternate;">
-      Inventory Tracker | Sales Reports | Automated Charts Generator
-    </div>
-    
-    <p style="color: #E2E8F0; margin: 15px 0 0 0; font-family: system-ui, sans-serif; font-size: 14px; line-height: 1.6;">
-      An interactive Command Line Interface (CLI) database system designed to automate warehouse inventory levels, process multi-item sales transactions, and export comprehensive business insight graphs natively.
-    </p>
-  </div>
-</div>
-
-<style>
-  @keyframes typing {
-    0% { width: 0; }
-    75% { width: 100%; }
-    100% { width: 100%; }
-  }
-</style>
-
----
-
 ## ⚡ Core System Features
 
 Click open the target disclosures below to explore sub-menu capabilities:
