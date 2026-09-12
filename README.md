@@ -1,139 +1,81 @@
 # Bookstore-Inventory-
+# Bookstore Inventory and Analytics System
 
-## 🗺️ System Architecture (Workflow Flowchart)
+A Python-based system to manage a bookstore's inventory, analyze sales data,
+and visualize trends. Built using Control Structures, Arrays, Object-Oriented
+Programming, NumPy, Pandas, and Matplotlib/Seaborn.
 
-The suite is cleanly engineered into 3 modular terminal frameworks, transforming your standard shell interface into a multi-purpose application hub:
+## Project Structure
 
-```mermaid
-graph TD
-    A[🏁 Master Toolkit Launcher] --> B(🧰 Package 1: General Utilities)
-    A --> C(🧮 Package 2: NumPy Analyzer)
-    A --> D(📚 Package 3: Bookstore CRM Engine)
-    
-    B --> B1[Datetime & Timers]
-    B --> B2[Math & Compound Interest]
-    B --> B3[Secure Passwords / OTP]
-    B --> B4[File I/O & dir Reflection]
-    
-    C --> C1[1D/2D/3D Slice & Index]
-    C --> C2[Matrix Math & Dot Product]
-    C --> C3[Stats, Std Dev & Percentiles]
-    
-    D --> D1[Inventory Stock Upsert]
-    D --> D2[Sales Logging Ledger]
-    D --> D3[Matplotlib Analytics Charts PNG]
-
-    style A fill:#1e1e2f,stroke:#FFD166,stroke-width:2px,color:#fff
-    classDef package fill:#111,stroke:#39FF14,stroke-width:1.5px,color:#fff;
-    class B,C,D package;
+```
+.
+├── bookstore_system.py   # Main application (Bookstore class + CLI)
+├── inventory.csv          # Sample inventory dataset (Title, Author, Genre, Price, Quantity)
+├── sales.csv               # Sample sales dataset (Date, Title, Quantity Sold, Total Revenue)
+└── README.md               # This file
 ```
 
----
+## Features
 
-## ⚡ Core Modules & Features
+- **Inventory Management**: add, update, and validate books (control structures ensure
+  price/quantity are always valid).
+- **`Bookstore` class (OOP)**: `add_book`, `update_inventory`, `record_sale`,
+  `generate_report`, plus analytics/visualization methods.
+- **Sales Analysis (NumPy + Pandas)**: total revenue, average price, monthly
+  sales growth rate, best-selling books, revenue by genre/author.
+- **Data Visualization (Matplotlib + Seaborn)**:
+  - Bar chart — total sales by genre
+  - Line graph — monthly sales trend
+  - Pie chart — revenue share by genre
+  - Heatmap — correlation between price and sales volume
 
-Click on any package category below to look closer into its specific technical features:
+## Setup Instructions
 
-<details open>
-<summary>📦 Package 1: General Utilities</summary>
-<br>
+1. **Requirements**: Python 3.9+ and the following packages:
+   ```
+   pip install numpy pandas matplotlib seaborn
+   ```
 
-* 📅 **Time & Calendar:** Display live system clock timestamps and calculate exact date deltas (day differences) between custom dates.
-* ⏱️ **Stopwatch & Timers:** Low-level monotonic system interval stopwatch and live-pausing console step-down countdowns.
-* 🔐 **Security Tokens:** Dynamically generate cryptographically safe alphanumeric passwords and 4-to-6 digit numeric One-Time Passwords (OTPs).
-* 📂 **File Stream I/O & Reflection:** Secure, context-managed file reader/writer operations alongside a python runtime namespace `dir()` inspector.
-</details>
+2. **Run the program** (make sure `inventory.csv` and `sales.csv` are in the
+   same folder as `bookstore_system.py`):
+   ```
+   python bookstore_system.py
+   ```
 
-<details>
-<summary>🧮 Package 2: NumPy Matrix Analyzer</summary>
-<br>
+3. **Using the menu**: the program launches an interactive CLI —
+   ```
+   1. Add a new book
+   2. Update inventory quantity
+   3. Record a sale
+   4. Generate summary report
+   5. Generate all visualizations (charts saved as PNG)
+   6. Show best-selling books
+   7. Save changes to CSV
+   8. Exit
+   ```
+   Choose option `5` to generate all four charts as PNG files in the same
+   directory. Choose option `7` (or `y` when exiting) to persist any
+   inventory/sales changes back to the CSV files.
 
-* 🧊 **N-Dimensional Array Factory:** Instantly configure multi-dimensional 1D vectors, 2D surfaces, or layered 3D matrices.
-* 🔪 **Dynamic Slicing Logic:** Extract matrix views using clean, custom string coordinate array indexing tokens (e.g., `0:2, 1:3`).
-* 📈 **Advanced Distributions:** Seamlessly compute element-wise math alongside high-level statistics like Mean, Median, Standard Deviation (σ), and multi-variable correlation coefficients.
-</details>
+## Dataset Notes
 
-<details>
-<summary>📊 Package 3: Bookstore CRM Engine</summary>
-<br>
+- `inventory.csv` — 25 sample books across 10 genres (Fiction, Romance,
+  Technology, Fantasy, Mystery, Adventure, Non-Fiction, Science, Poetry,
+  Historical), with randomized prices and stock quantities.
+- `sales.csv` — ~823 synthetic daily sales transactions spanning 6 months
+  (March–September 2026), generated with genre-weighted random sales volume
+  so that visualizations show realistic trends and variation.
 
-* 📥 **Upsert Catalog Handling:** Add inventory entries safely. Automatically checks for duplicates and cascades matching tokens into bulk volume top-ups rather than cloning records.
-* 💰 **Sales Registry Ledger:** Stream customer transaction quantities, subtract units from available warehouse stock, and tally cumulative revenues.
-* 🎨 **Matplotlib Graph Generator:** Automatically renders and exports full-color analytical business insight metrics straight into the workspace as local `.png` files:
-  - `chart_sales_by_genre.png` (Genre distribution bar graphics)
-  - `chart_monthly_trend.png` (Chronological customer volume line trend)
-  - `chart_revenue_pie.png` (Financial breakdown profit contribution share split)
-  - `chart_price_sales_heatmap.png` (Price elasticity / sales volume clustering matrix)
-</details>
+Both datasets were generated programmatically (with the help of AI, using
+NumPy's random generator with a fixed seed for reproducibility) as sample
+data for testing the system — you can replace them with real bookstore data
+using the same column structure.
 
----
+## Notes for Reviewers
 
-## 🚀 Installation & Deployment
-
-### 1. Prerequisites (Dependencies)
-While the core utilities run strictly on Python's built-in standard library, the advanced **NumPy** and **Bookstore CRM charts** require data-science computation packages. Install them using your preferred terminal terminal:
-```bash
-pip install numpy pandas matplotlib seaborn
-```
-
-### 2. Launch the Application Suite
-Ensure you are in the application root directory and type:
-```bash
-python main_toolkit.py
-```
-
----
-
-## 💻 Sample Console Execution Logs
-
-```text
-==========================================
-        MULTI-UTILITY MASTER SUITE
-==========================================
-Current Date and Time: 2026-09-11 12:51:44
-Difference: 127 days | Generated Password: TY2QsTi1B1py
-
---- NumPy Array created successfully ---
-[[ 10  30  50]
- [ 70  90 110]]
-Standard Deviation of Array: 34.15650255319866
-
---- Bookstore Summary Report ---
-Books in catalog        : 26
-Total units in stock    : 1878
-Total sales transactions: 825
-Total revenue to date   : \$33,763.04
-
-[SAVED] chart_sales_by_genre.png
-[SAVED] chart_monthly_trend.png
-[SAVED] chart_revenue_pie.png
-==========================================
-Data saved successfully. Goodbye!
-```
-
----
-
-<!-- GitHub-Friendly Professional UI Custom Theme Style -->
-<style>
-  summary {
-    font-size: 1.1rem;
-    padding: 14px;
-    background: #0d1117;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    border-left: 4px solid #39FF14;
-    transition: all 0.2s ease-in-out;
-    list-style: none;
-    font-family: system-ui, sans-serif;
-    color: #c9d1d9;
-  }
-  summary:hover {
-    background: #161b22;
-    transform: translateX(5px);
-    color: #58a6ff;
-  }
-  summary::-webkit-details-marker {
-    display: none;
-  }
-</style>
+- All user inputs (price, quantity, titles) are validated before being
+  applied; invalid input never corrupts the DataFrames.
+- Missing/invalid values in the CSVs are handled during loading (`_load_inventory`,
+  `_load_sales`) via `pd.to_numeric(..., errors="coerce")` and `dropna`.
+- Code is organized into a single `Bookstore` class for modularity, with a
+  thin CLI (`run_cli`) layered on top for interaction.
