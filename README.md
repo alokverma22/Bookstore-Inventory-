@@ -1,18 +1,18 @@
 # Bookstore-Inventory-
-# 📚 Bookstore Inventory & Analytics System
+# 🛠️ Multi-Utility Master Suite
 
 <div align="center">
   <!-- Premium Native CSS Animated Header Card -->
-  <div style="background: linear-gradient(135deg, #1e1e2f 0%, #162a45 100%); padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.4); border: 2px solid #FF6B6B; max-width: 650px; margin: 20px auto; overflow: hidden;">
-    <h1 style="color: #FFD166; margin: 0 0 10px 0; font-family: 'Fira Code', monospace; font-size: 26px; text-shadow: 0 0 12px rgba(255,209,102,0.4);">📖 Bookstore CRM & Analytics Engine</h1>
+  <div style="background: linear-gradient(135deg, #1e1e2f 0%, #111e38 100%); padding: 35px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.4); border: 2px solid #39FF14; max-width: 700px; margin: 20px auto; overflow: hidden;">
+    <h1 style="color: #FFD166; margin: 0 0 10px 0; font-family: 'Fira Code', monospace; font-size: 28px; text-shadow: 0 0 12px rgba(255,209,102,0.4);">🚀 Core Python Multi-Utility Toolkit</h1>
     
     <!-- CSS Typing Animation -->
-    <div style="display: inline-block; font-family: 'Fira Code', monospace; font-weight: 600; font-size: 16px; color: #45C4B0; border-right: 2px solid #45C4B0; white-space: nowrap; overflow: hidden; width: 0; animation: typing 4s steps(40, end) infinite alternate;">
-      Inventory Tracker | Sales Reports | Automated Charts Generator
+    <div style="display: inline-block; font-family: 'Fira Code', monospace; font-weight: 600; font-size: 16px; color: #39FF14; border-right: 2px solid #39FF14; white-space: nowrap; overflow: hidden; width: 0; animation: typing 4s steps(45, end) infinite alternate;">
+      3-in-1 Suite: General Utils | NumPy Matrix Analyzer | Bookstore CRM
     </div>
     
     <p style="color: #E2E8F0; margin: 15px 0 0 0; font-family: system-ui, sans-serif; font-size: 14px; line-height: 1.6;">
-      बुकरिकॉर्ड्स और वेयरहाउस स्टॉक को ऑटोमैटिक मैनेज करने, रीयल-टाइम सेल्स डेटा प्रोसेस करने और व्यावसायिक एनालिटिक्स चार्ट (PNG) जेनरेट करने वाला एक दमदार टर्मिनल यूटिलिटी सिस्टम।
+      दैनिक टूल्स, वैज्ञानिक मैट्रिक्स गणना (NumPy) और पूर्ण बुकस्टोर इन्वेंट्री-कम-एनालिटिक्स सिस्टम को संभालने के लिए बनाया गया एक शक्तिशाली, इंटरैक्टिव और कमांड-लाइन आधारित कंसोल पावरहाउस।
     </p>
   </div>
 </div>
@@ -20,145 +20,144 @@
 <style>
   @keyframes typing {
     0% { width: 0; }
-    70% { width: 100%; }
+    75% { width: 100%; }
     100% { width: 100%; }
   }
 </style>
 
 ---
 
-## ⚡ मुख्य फीचर्स की झलक (Features)
+## 🗺️ संपूर्ण सिस्टम आर्किटेक्चर (Workflow Flowchart)
 
-नीचे दिए गए केटेगरी पर क्लिक करके देखें कि यह सिस्टम क्या-क्या संभाल सकता है:
-
-<details open>
-<summary><b>📦 1. स्मार्ट स्टॉक और इन्वेंटरी मैनेजमेंट</b></summary>
-<br>
-
-* 🆕 **स्मार्ट कैटलॉगिंग:** नई किताबें जोड़ें। यदि किताब पहले से मौजूद है, तो यह डुप्लिकेट बनाने के बजाय सीधे स्टॉक मात्रा (Quantity) को ऑटो-अपडेट कर देता है।
-* 🔄 **मैनुअल स्टॉक ओवरराइड:** किसी भी किताब के स्टॉक को कभी भी सीधे सिंगल कमांड से अपडेट या रीसेट करें।
-</details>
-
-<details>
-<summary><b>💰 2. लाइव सेल्स ट्रांजैक्शन रजिस्ट्री</b></summary>
-<br>
-
-* 📝 **ऑटो-बिलिंग:** रीयल-टाइम बिक्री रिकॉर्ड करें। यह ग्राहकों की खरीद के आधार पर स्टॉक से किताबें घटाता है और कुल रेवेन्यू (Revenue) की सटीक गणना करता है।
-</details>
-
-<details>
-<summary><b>📋 3. बिजनेस समरी रिपोर्ट ऑडिट</b></summary>
-<br>
-
-* 📊 **ऑटोमेटेड लेजर:** एक क्लिक में कैटलॉग में कुल किताबें, स्टॉक में मौजूद कुल यूनिट्स, औसत कीमतें (Average Price) और अब तक की कुल कमाई की पूरी ऑडिट रिपोर्ट देखें।
-</details>
-
-<details>
-<summary><b>🎨 4. डेटा विज़ुअलाइज़ेशन (Matplotlib Charts Suite)</b></summary>
-<br>
-
-* 📈 **Genre Cluster Graphs:** कौन सी शैली (Genre) की किताबें सबसे ज़्यादा बिक रही हैं, इसे बार चार्ट (`chart_sales_by_genre.png`) के रूप में सेव करता है।
-* 🕒 **Monthly Sales Trends:** महीने-दर-महीने बिक्री का उतार-चढ़ाव ट्रेंड लाइन (`chart_monthly_trend.png`) से ट्रैक करें।
-* 🍕 **Revenue Share Pie Charts:** कौन सी बेस्ट-सेलिंग किताबें सबसे ज़्यादा मुनाफा कमा रही हैं, इसका पाई चार्ट (`chart_revenue_pie.png`) बनाएं।
-* 🌡️ **Elasticity Heatmaps:** कीमत और बिक्री के बीच के संबंध को समझने के लिए कोरिलेशन हीटमैप (`chart_price_sales_heatmap.png`) जेनरेट करें।
-</details>
-
----
-
-## 🗺️ सिस्टम आर्किटेक्चर फ्लो (Workflow)
+यह सुइट 3 अलग-अलग मोड्युलरी पैकेजों में बंटा हुआ है जो आपके टर्मिनल को एक सुपर-ऐप में बदल देते हैं:
 
 ```mermaid
 graph TD
-    X[🏁 Launch Bookstore Console] --> Y[💾 Read CSV Database]
-    Y --> A[🎛️ Command Dashboard Core]
-    A --> B(📥 1. Add New Book / Upsert Stock)
-    A --> C(🔄 2. Update Inventory Quantity)
-    A --> D(💰 3. Record a Sale & Deduct Stock)
-    A --> E(📋 4. Generate Global Summary Report)
-    A --> F(🎨 5. Generate Visualizations Save PNGs)
-    A --> G(🏆 6. Show Best-Selling Books)
-    A --> H(💾 7. Save Changes to Persistent CSV)
-    A --> I[🛑 8. Safe Shutdown & Exit]
+    A[🏁 Master Toolkit Launcher] --> B(🧰 Package 1: General Utilities)
+    A --> C(🧮 Package 2: NumPy Analyzer)
+    A --> D(📚 Package 3: Bookstore CRM Engine)
+    
+    B --> B1[Datetime & Timers]
+    B --> B2[Math & Compound Interest]
+    B --> B3[Secure Passwords / OTP]
+    B --> B4[File I/O & dir Reflection]
+    
+    C --> C1[1D/2D/3D Slice & Index]
+    C --> C2[Matrix Math & Dot Product]
+    C --> C3[Stats, Std Dev & Percentiles]
+    
+    D --> D1[Inventory Stock Upsert]
+    D --> D2[Sales Logging Ledger]
+    D --> D3[Matplotlib Analytics Charts PNG]
 
-    style X fill:#1A1B2F,stroke:#FFD166,stroke-width:2px,color:#fff
-    style I fill:#2a1414,stroke:#ff3333,stroke-width:2px,color:#fff
-    classDef menuOps fill:#111,stroke:#FF6B6B,stroke-width:1px,color:#fff;
-    class B,C,D,E,F,G,H menuOps;
+    style A fill:#1e1e2f,stroke:#FFD166,stroke-width:2px,color:#fff
+    classDef package fill:#111,stroke:#39FF14,stroke-width:1.5px,color:#fff;
+    class B,C,D package;
 ```
 
 ---
 
-## 🚀 इंस्टॉलेशन और रन करने का तरीका
+## ⚡ मुख्य मॉड्यूल और उनके फीचर्स (Module Overview)
 
-### 1. जरूरी पैकेज इंस्टॉल करें
-इस स्क्रिप्ट को चलाने के लिए आपके सिस्टम में `Python 3` और नीचे दिए गए डेटा साइंस पैकेजेस होने चाहिए:
+नीचे दिए गए किसी भी पैकेज को एक्सपैंड (खोलकर) करके उसके अंदर की सभी क्षमताएं देखें:
+
+<details open>
+<summary>📦 मॉड्यूल 1: सामान्य उपयोगिताएँ (General Utilities)</summary>
+<br>
+
+* 📅 **समय और दिनांक:** रीयल-टाइम क्लॉक स्टैम्प देखना और दो तारीखों के बीच का अंतर निकालना।
+* ⏱️ **स्टॉपवॉच और टाइमर:** टर्मिनल के अंदर लाइव पॉज़िंग के साथ सटीक काउंटडाउन और स्टॉपवॉच।
+* 🔐 **सिक्योरिटी टोकन्स:** रैंडम अल्फ़ान्यूमेरिक पासवर्ड जनरेटर और वन-टाइम पासकोड (OTP) जनरेटर।
+* 📂 **फ़ाईल सिस्टम और रिफ्लेक्शन:** फ़ाइलों को सुरक्षित तरीके से पढ़ना/लिखना और `dir()` का उपयोग करके लाइब्रेरी एट्रिब्यूट्स की जांच करना।
+</details>
+
+<details>
+<summary>🧮 मॉड्यूल 2: न्यूमपाय मैट्रिक्स विश्लेषक (NumPy Analyzer)</summary>
+<br>
+
+* 🧊 **N-Dimensional Array Factory:** आसानी से 1D वेक्टर्स, 2D मेट्रिसेस या जटिल 3D एरेज़ का निर्माण।
+* 🔪 **डायनामिक स्लाइसिंग:** इनपुट स्ट्रिंग्स (जैसे `0:2, 1:3`) के ज़रिए मैट्रिक्स के किसी भी हिस्से को काटना।
+* 📈 **एडवांस्ड स्टैटिस्टिक्स:** कुल योग (Sum), माध्य (Mean), मानक विचलन (Standard Deviation/σ) और कोरिलेशन कोएफिशिएंट निकालना।
+</details>
+
+<details>
+<summary>📊 मॉड्यूल 3: बुकस्टोर इन्वेंट्री और एनालिटिक्स (Bookstore CRM)</summary>
+<br>
+
+* 📥 **स्मार्ट कैटलॉग:** किताबें जोड़ें। यदि किताब पहले से मौजूद है, तो यह डुप्लिकेट बनाने के बजाय सीधे मात्रा बढ़ा देता है।
+* 💰 **बिक्री खाता (Sales Ledger):** लाइव सेल्स को रिकॉर्ड करना, स्टॉक से किताबें घटाना और कुल रेवेन्यू का ऑडिट करना।
+* 🎨 **ऑटो-ग्राफ जनरेटर (Matplotlib):** एक सिंगल क्लिक में निम्नलिखित व्यावसायिक विज़ुअलाइज़ेशन चार्ट्स को `.png` इमेज के रूप में सेव करना:
+  - `chart_sales_by_genre.png` (शैली आधारित बिक्री बार चार्ट)
+  - `chart_monthly_trend.png` (मासिक बिक्री का उतार-चढ़ाव)
+  - `chart_revenue_pie.png` (कमाई का प्रतिशत पाई चार्ट)
+  - `chart_price_sales_heatmap.png` (कीमत और मांग का हीटमैप)
+</details>
+
+---
+
+## 🚀 इंस्टॉलेशन और रन करने की प्रक्रिया
+
+### 1. सिस्टम आवश्यकताएँ (Dependencies)
+इस सुइट के सामान्य यूटिलिटी टूल्स बिना किसी बाहरी लाइब्रेरी के चलते हैं, लेकिन **NumPy** और **Bookstore Charts** के लिए नीचे दिए गए पैकेजों को इंस्टॉल करना ज़रूरी है:
 ```bash
-pip install pandas matplotlib seaborn
+pip install numpy pandas matplotlib seaborn
 ```
 
-### 2. टर्मिनल में रन करें
+### 2. सुइट को टर्मिनल में चलाएं
 ```bash
-python bookstore_analytics.py
+python main_toolkit.py
 ```
 
 ---
 
-## 💻 सैंपल कंसोल आउटपुट लॉग (Historical Logs)
+## 💻 सैंपल रन लॉग्स (System Logs Breakdown)
 
 ```text
-Bookstore system loaded:
-  26 books in inventory, 824 sales records.
+==========================================
+        MULTI-UTILITY MASTER SUITE
+==========================================
+Current Date and Time: 2026-09-11 12:51:44
+Difference: 127 days | Generated Password: TY2QsTi1B1py
 
------ Bookstore Inventory & Analytics System -----
-1. Add a new book
-2. Update inventory quantity
-3. Record a sale
-4. Generate summary report
-5. Generate all visualizations (charts saved as PNG)
-6. Show best-selling books
-7. Save changes to CSV
-8. Exit
+--- NumPy Array created successfully ---
+[[ 10  30  50]
+ [ 70  90 110]]
+Standard Deviation of Array: 34.15650255319866
 
-=======================================================
-BOOKSTORE SUMMARY REPORT
-=======================================================
+--- Bookstore Summary Report ---
 Books in catalog        : 26
 Total units in stock    : 1878
-Average book price      : \$16.74
 Total sales transactions: 825
 Total revenue to date   : \$33,763.04
-=======================================================
 
-Saved: chart_sales_by_genre.png
-Saved: chart_monthly_trend.png
-Saved: chart_revenue_pie.png
-Saved: chart_price_sales_heatmap.png
-
-Inventory and sales data saved.
-Goodbye!
+[SAVED] chart_sales_by_genre.png
+[SAVED] chart_monthly_trend.png
+[SAVED] chart_revenue_pie.png
+==========================================
+Data saved successfully. Goodbye!
 ```
 
 ---
 
-<!-- Premium Safe Markdown UI Custom Styles Component -->
+<!-- GitHub-Friendly Professional UI Custom Theme Style -->
 <style>
   summary {
     font-size: 1.1rem;
     padding: 14px;
-    background: #0f141c;
+    background: #0d1117;
     border-radius: 8px;
     margin-bottom: 10px;
     cursor: pointer;
-    border-left: 4px solid #FF6B6B;
+    border-left: 4px solid #39FF14;
     transition: all 0.2s ease-in-out;
     list-style: none;
     font-family: system-ui, sans-serif;
-    color: #cbd5e1;
+    color: #c9d1d9;
   }
   summary:hover {
-    background: #1e293b;
+    background: #161b22;
     transform: translateX(5px);
-    color: #FFD166;
+    color: #58a6ff;
   }
   summary::-webkit-details-marker {
     display: none;
