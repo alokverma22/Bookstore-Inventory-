@@ -114,26 +114,3 @@ Goodbye!
 ---
 
 <!-- Premium Safe Markdown UI Custom Styles Component -->
-<style>
-  summary {
-    font-size: 1.1rem;
-    padding: 14px;
-    background: #0f141c;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    border-left: 4px solid #FF6B6B;
-    transition: all 0.2s ease-in-out;
-    list-style: none;
-    font-family: system-ui, sans-serif;
-    color: #cbd5e1;
-  }
-  summary:hover {
-    background: #1e293b;
-    transform: translateX(5px);
-    color: #FFD166;
-  }
-  summary::-webkit-details-marker {
-    display: none;
-  }
-</style>
